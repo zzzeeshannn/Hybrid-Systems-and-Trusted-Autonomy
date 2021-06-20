@@ -7,3 +7,4 @@ This program holds different simulation methods like Eulers  Method, Adams-Bashf
 ### Program 2: F16 Aircraft Simulation
 Uses zero crossing methods to find intersection with the waypoint to change modes.
 
+### Program 3: Euler Simulation for a harmonic oscillator

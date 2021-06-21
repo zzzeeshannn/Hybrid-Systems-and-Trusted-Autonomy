@@ -1,7 +1,3 @@
-'''
-Zonotope reach
-'''
-
 import math
 from copy import deepcopy
 
@@ -12,7 +8,6 @@ import matplotlib.pyplot as plt
 from scipy.linalg import expm
 
 class Zonotope:
-    'zonotope class'
 
     def __init__(self, box, a_mat=None):
 

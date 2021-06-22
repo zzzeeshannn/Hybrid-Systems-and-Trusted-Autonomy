@@ -11,7 +11,8 @@ from scipy.linalg import expm
 
 # Defining the Zonotope here
 class Zonotope:
-
+    # In this representation, we take a box as input as compared to the traditional center and generators
+    # The box represents the set of all possible states
     def __init__(self, box, a_mat = None):
         self.box = np.array(box, dtype = float)
         self.a_mat = a_mat if a_mat is not None else np.identity(self.box.shape[0])

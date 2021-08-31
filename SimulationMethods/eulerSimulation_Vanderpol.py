@@ -1,7 +1,7 @@
 """
 This program is the basic implementation of the Euler Simulation over a Vanderpol Oscillator.
 
-Dynamics of a Harmonic Oscillator are:
+Dynamics of a Vanderpol Oscillator are:
 x' = y
 y' = ((1-x^2)*y) - x
 """

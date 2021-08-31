@@ -2,8 +2,8 @@
 Euler Simulation vs RK45
 
 This program is used to test the two simulation methods: Euler and RK45.
-It is used to compare the mathematical accuracy of the two methods by simulating a harmonic oscillator
-and plotting the subsequent points for a fixed time step.
+It is used to compare the mathematical accuracy of the two methods by simulating a harmonic oscillator,
+plotting the subsequent points for a fixed time step and comparing the errors.
 '''
 
 import numpy as np

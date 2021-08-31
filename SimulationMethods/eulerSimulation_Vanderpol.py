@@ -17,7 +17,7 @@ def vanderpol_oscillator(state, time):
     time: Current time step
 
     Returns:
-    x_der, y_der: First order derivatives for the Harmonic Oscillator
+    x_der, y_der: First order derivatives for the Vanderpol Oscillator
 
     Note:
     The input parameter "time" is not used in this implementation but is often used and is a standard input parameter.

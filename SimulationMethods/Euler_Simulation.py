@@ -1,5 +1,9 @@
 '''
-Euler Simulation
+Euler Simulation vs RK45
+
+This program is used to test the two simulation methods: Euler and RK45.
+It is used to compare the mathematical accuracy of the two methods by simulating a harmonic oscillator
+and plotting the subsequent points for a fixed time step.
 '''
 
 import numpy as np
@@ -102,6 +106,7 @@ def main():
 
     # save figure to a file
     plt.legend()
+    plt.plot()
     plt.savefig('out.png')
 
     # print difference at last point
@@ -110,7 +115,7 @@ def main():
 
     difference = np.linalg.norm(last_rk45 - last_euler)
 
-    printf("difference in last point:", difference)
+    print("difference in last point:", difference)
 
 if __name__ == '__main__':
     main()

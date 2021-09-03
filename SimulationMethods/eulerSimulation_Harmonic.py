@@ -29,9 +29,11 @@ def harmonic_oscillator(state, time):
 
     return x_der, y_der
 
-def euler_simulation(der_function, num_steps, delta, init_point):
+def euler_simulation(der_function,init_point, step_size, num_steps):
     """
-    This function is used to run the euler simulation
+    Logic:
+    In the Euler method, next state of the system u(t+h) is given by:
+    u(t+h) = u(t) + h * u'(t)
 
     Inputs:
     der_function: The function to return the derivative of the dynamical system
@@ -47,12 +49,12 @@ def euler_simulation(der_function, num_steps, delta, init_point):
 
     for every_step in range(num_steps):
         # Get the current time and state of the system to pass to the der function
-        current_time = delta * every_step
+        current_time = step_size * every_step
         current_point = state_list[-1]
         # Call der function
         derivative = np.array(der_function(current_point, current_time), dtype=float)
         # Euler update rule
-        new_point = current_point + delta * derivative
+        new_point = current_point + step_size * derivative
         # Add the point to the state list
         state_list.append(new_point)
 
@@ -61,6 +63,7 @@ def euler_simulation(der_function, num_steps, delta, init_point):
 def main():
     """
     Main function
+
     Required parameters:
     init_point: Starting point of the harmonic oscillator
     delta: The time delta/ time elapsed per step

@@ -31,7 +31,9 @@ def vanderpol_oscillator(state, time):
 
 def euler_simulation(der_function, num_steps, delta, init_point):
     """
-    This function is used to run the euler simulation
+    Logic:
+    In the Euler method, next state of the system u(t+h) is given by:
+    u(t+h) = u(t) + h * u'(t)
 
     Inputs:
     der_function: The function to return the derivative of the dynamical system
@@ -42,6 +44,7 @@ def euler_simulation(der_function, num_steps, delta, init_point):
     Returns:
     state_list: List of points/state of the dynamic system at the end of the simulation
     """
+
     # Initialize the state list with the starting point
     state_list = [init_point.copy()]
 
@@ -67,7 +70,9 @@ def main():
     max_time: Time limit
     num_steps: Essentially max_time/time_step (helpful for runnning loops)
     """
+
     color_list = ["black", "r", "b"]
+    legend_names = ["0.1", "0.01", "0.001"]
     for index, delta in enumerate([0.1, 0.01, 0.001]):
         # Define required parameters
         # Convert the list to a vector
@@ -78,7 +83,7 @@ def main():
         num_steps = int(round(max_time / delta))
         # Call euler simulation
         points = euler_simulation(vanderpol_oscillator, num_steps, delta, init_point)
-
+        
         # Plot results
         # Retrieve the x and y points
         xs = [every_point[0] for every_point in points]
@@ -86,6 +91,7 @@ def main():
         plt.subplot(1, 3, index+1)
         plt.plot(xs, ys, color_list[index])
         plt.title(delta)
+        #plt.legend(legend_names[index], prop={'size': 12})
 
     plt.show()
 

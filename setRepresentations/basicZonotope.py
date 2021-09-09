@@ -5,6 +5,7 @@ import math
 
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
 
 from copy import deepcopy
 from scipy.linalg import expm
@@ -159,7 +160,7 @@ def main():
 
     plt.plot([mode_boundary, mode_boundary], [-2, 6], 'k--')
     plt.show()
-    plt.savefig('basicZono.png')
+    #plt.savefig('basicZono.png')
 
 if __name__ == '__main__':
     init_plot()

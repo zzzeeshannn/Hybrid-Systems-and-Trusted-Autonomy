@@ -1,10 +1,16 @@
 # Hybrid-Systems-and-Trusted-Autonomy
-Repository of my work with Hybrid Systems, covering topics from Reachability Analysis to Predicate Logic
+Repository of my work with Hybrid Systems.
 
-### Program 1: Simulation Methods
-This program holds different simulation methods like Eulers  Method, Adams-Bashford Method and RK4 Method. 
+### Folder 1: Simulation Methods
+This folder holds different simulation methods like Eulers Method, Adams-Bashford Method and RK4 Method. 
 
-### Program 2: F16 Aircraft Simulation
-Uses zero crossing methods to find intersection with the waypoint to change modes.
+### Folder 2: F16 Aircraft Simulation
+Uses zero crossing methods (bisection) to find intersection with the waypoint to change modes.
+Multiple experiments done which can be found in the folder. 
 
-### Program 3: Euler Simulation for a harmonic oscillator
+### Folder 3: Zero Crossing Methods 
+Holds one sample program that was used to test three zero crossing methods - bisection, secant and newtons 
+for a simple function.
+
+### Folder 4: Set Representation 
+Holds the code for different types of set representations such as Zonotopes, Startsets etc.

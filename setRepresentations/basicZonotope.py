@@ -1,4 +1,6 @@
-# Basic code for a zonotope set representation
+"""
+Zonotope representation that starts with an initial set of states (box form)
+"""
 
 # Importing functions here
 import math

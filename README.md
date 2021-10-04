@@ -14,3 +14,6 @@ for a simple function.
 
 ### Folder 4: Set Representation 
 Holds the code for different types of set representations such as Zonotopes, Startsets etc.
+
+### Folder 5: Helpers
+Contains basic codes for things I might have used here and there.

@@ -17,3 +17,6 @@ Holds the code for different types of set representations such as Zonotopes, Sta
 
 ### Folder 5: Helpers
 Contains basic codes for things I might have used here and there.
+
+### Folder 6: SatelliteSimulation
+Reachability Analysis of a satellite system (based off the paper: https://arxiv.org/abs/1703.06930)
